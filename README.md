@@ -133,32 +133,49 @@ Tavily와 Serper.dev에 대한 벤치마크를 실시하여 웹 검색 도구를
 ## Directory Structure
 
 ```
-├── data/                          # RAG 문서 (5개, ~95p)
+├── data/                              # RAG 문서 (5개, ~95p)
 │   ├── 01_글로벌_배터리_시장_환경.md
 │   ├── 02_LG에너지솔루션_전략_분석.md
 │   ├── 03_CATL_전략_분석.md
 │   ├── 04_양사_비교_데이터.md
 │   └── 05_리스크_외부_환경.md
-├── agents/                        # Agent 모듈
-│   ├── supervisor.py
-│   ├── market_research.py
-│   ├── lg_analysis.py
-│   ├── catl_analysis.py
-│   ├── comparison.py
-│   ├── report_writer.py
-│   └── quality_review.py
-├── tools/                         # 공유 도구
-│   ├── rag_tool.py               # Agentic RAG
-│   └── web_search_tool.py        # Serper.dev + 편향 방지
-├── prompts/                       # 프롬프트 템플릿
-├── vectorstore/                   # FAISS 인덱스
-├── outputs/                       # 생성 보고서
-├── docs/                          # 설계 문서 & 다이어그램
-├── app.py                         # 메인 실행
-├── graph.py                       # LangGraph 그래프 정의
-├── state.py                       # State 정의
-├── config.py                      # 설정
-└── ingest.py                      # 문서 임베딩 & 벡터DB
+├── agents/                            # Agent 모듈
+│   ├── supervisor.py                 #   관리자 (라우팅·재작업 판단)
+│   ├── market_research.py            #   시장 조사
+│   ├── lg_analysis.py                #   LG에너지솔루션 분석
+│   ├── catl_analysis.py              #   CATL 분석
+│   ├── comparison.py                 #   비교·SWOT
+│   ├── report_writer.py              #   보고서 작성
+│   └── quality_review.py             #   품질 검증
+├── tools/                             # 공유 도구
+│   ├── rag_tool.py                   #   Agentic RAG 검색
+│   ├── web_search_tool.py            #   Serper.dev + 편향 방지
+│   └── chart_generator.py            #   보고서 시각화 차트 생성
+├── prompts/                           # 프롬프트 템플릿
+│   ├── supervisor_prompt.py
+│   ├── research_prompts.py
+│   ├── comparison_prompt.py
+│   ├── report_writer_prompt.py
+│   └── quality_review_prompt.py
+├── docs/                              # 설계 문서 & 시각 자료
+│   ├── design/                       #   설계 산출물 (md, docx 생성기)
+│   ├── diagrams/                     #   drawio 다이어그램 (5개)
+│   └── benchmarks/                   #   벤치마크 차트 (임베딩·벡터DB·웹검색)
+├── benchmark_results/                 # 벤치마크 원본 데이터 (JSON, PNG)
+├── evaluation_results/                # 품질 평가 결과 (JSON)
+├── outputs/                           # 생성된 보고서
+│   ├── charts/                       #   보고서 내 시각화 차트 (7개)
+│   └── report_*.{md,html,pdf}        #   최종 보고서 (실행 시마다 생성)
+├── app.py                             # 메인 실행 스크립트
+├── graph.py                           # LangGraph 그래프 정의
+├── state.py                           # GraphState 정의
+├── config.py                          # 설정 (API 키, 모델, 파라미터)
+├── ingest.py                          # 문서 임베딩 & FAISS 벡터DB
+├── evaluate.py                        # 품질 평가 (RAG + 보고서)
+├── benchmark_embedding.py             # 임베딩 모델 벤치마크
+├── benchmark_vectordb.py              # 벡터DB 벤치마크
+├── benchmark_websearch.py             # 웹 검색 도구 벤치마크
+└── requirements.txt
 ```
 
 ## How to Run

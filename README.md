@@ -62,7 +62,7 @@
 
 > `ko-sroberta`도 Hit@1 80%로 동일했으나, 모델 로드 시간(53.5s vs 5.2s)과 벡터 차원(768 vs 1024)에서 `bge-m3`가 더 균형 잡힌 성능을 보여 최종 선정하였다.
 
-![임베딩 모델 비교 분석](docs/embedding_comparison.png)
+![임베딩 모델 비교 분석](docs/benchmarks/embedding_comparison.png)
 
 ## 벡터DB 선정
 
@@ -77,7 +77,7 @@ FAISS와 Chroma에 대한 벤치마크를 실시하여 벡터DB를 선정하였�
 
 > **FAISS 선정 근거** : 검색 속도가 소폭 우수하고, 디스크 사용량이 약 1/5 수준으로 경량이다. 소규모 문서(5개, ~95p)에 적합하며, 외부 서버 없이 로컬 파일 기반으로 동작하여 프로토타입에 적합하다.
 
-![벡터DB 비교 분석](docs/vectordb_comparison.png)
+![벡터DB 비교 분석](docs/benchmarks/vectordb_comparison.png)
 
 ## 웹 검색 도구 선정
 
@@ -91,7 +91,7 @@ Tavily와 Serper.dev에 대한 벤치마크를 실시하여 웹 검색 도구를
 
 > Tavily가 응답 속도와 결과 풍부함에서 우수했으나, 본 프로젝트에서는 **Serper.dev**를 선정하였다. Agent당 약 4회 정도 웹 검색이 실행되며 1회 보고서 생성에 약 20회의 검색이 소비되므로, Tavily의 무료 한도(1,000회)로는 약 66회 실행이 한계인 반면, Serper.dev(2,500회)는 약 166회 실행이 가능하여 **경제성 측면에서 2.5배 유리**하다.
 
-![웹 검색 도구 비교](docs/websearch_comparison.png)
+![웹 검색 도구 비교](docs/benchmarks/websearch_comparison.png)
 
 ## 품질 평가
 

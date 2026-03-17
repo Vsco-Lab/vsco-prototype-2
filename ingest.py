@@ -1,7 +1,7 @@
 """RAG 문서 임베딩 및 FAISS 벡터DB 구축"""
 import os
 from langchain_community.document_loaders import TextLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from config import (

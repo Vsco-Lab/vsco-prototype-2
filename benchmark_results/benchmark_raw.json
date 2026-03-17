@@ -1,0 +1,164 @@
+{
+  "faiss": {
+    "name": "FAISS",
+    "index_time": 24.5,
+    "memory_mb": 1220.5,
+    "avg_search_time": 119.63,
+    "min_search_time": 115.76,
+    "max_search_time": 125.04,
+    "search_details": [
+      {
+        "query": "LG에너지솔루션 2025년 매출 영업이익",
+        "time": 0.125,
+        "top1_score": 0.2572,
+        "top1_source": "04_양사_비교_데이터.md",
+        "top1_preview": "## 1. 핵심 경영 지표 비교 (2025년 기준)\n\n### 1.1 재무 실적 비교\n\n| 지표 | LG에너지솔루션 | CATL | 배율(CATL"
+      },
+      {
+        "query": "CATL 나트륨이온 배터리 상용화 시점",
+        "time": 0.1174,
+        "top1_score": 0.258,
+        "top1_source": "03_CATL_전략_분석.md",
+        "top1_preview": "- 글로벌이코노믹(2026-03-12). *CATL 전고체 배터리 국제 특허 공개*. https://www.g-enews.com/article/"
+      },
+      {
+        "query": "글로벌 ESS 시장 규모 성장률 전망",
+        "time": 0.118,
+        "top1_score": 0.2624,
+        "top1_source": "01_글로벌_배터리_시장_환경.md",
+        "top1_preview": "## 2. ESS(에너지저장장치) 시장의 급부상\n\n### 2.1 ESS 시장 규모와 성장 전망\n\n전기차 시장이 캐즘을 겪는 동안 ESS 시장은 "
+      },
+      {
+        "query": "전기차 캐즘 원인과 HEV 피벗",
+        "time": 0.1184,
+        "top1_score": 0.1859,
+        "top1_source": "01_글로벌_배터리_시장_환경.md",
+        "top1_preview": "### 1.3 캐즘 발생의 주요 원인\n\n**가격 장벽**: 전기차의 평균 판매 가격은 여전히 내연기관 대비 높은 수준이다. 미국 시장에서 전기차"
+      },
+      {
+        "query": "LG에너지솔루션 CATL 시장점유율 비교",
+        "time": 0.1248,
+        "top1_score": 0.1445,
+        "top1_source": "04_양사_비교_데이터.md",
+        "top1_preview": "# LG에너지솔루션 vs CATL 비교 데이터"
+      },
+      {
+        "query": "배터리 원자재 리튬 가격 변동",
+        "time": 0.1204,
+        "top1_score": 0.2535,
+        "top1_source": "01_글로벌_배터리_시장_환경.md",
+        "top1_preview": "## 4. 배터리 원자재 시장 동향\n\n### 4.1 핵심 원자재 가격 변동\n\n배터리 핵심 원자재 가격은 2022년 급등 이후 하락세를 거쳐 20"
+      },
+      {
+        "query": "CATL 해외 공장 유럽 인도네시아",
+        "time": 0.1184,
+        "top1_score": 0.2529,
+        "top1_source": "04_양사_비교_데이터.md",
+        "top1_preview": "## 5. 글로벌 생산 거점 비교\n\n### 5.1 생산 기지 수\n\n| 지역 | LG에너지솔루션 | CATL |\n|------|----------"
+      },
+      {
+        "query": "전고체 배터리 기술 로드맵 양산",
+        "time": 0.1193,
+        "top1_score": 0.2769,
+        "top1_source": "05_리스크_외부_환경.md",
+        "top1_preview": "## 5. 기술 리스크\n\n### 5.1 전고체 배터리 상용화 불확실성\n\n**기술적 과제**:\n- 고체 전해질의 이온 전도도 향상\n- 전극-전해질"
+      },
+      {
+        "query": "IRA 정책 변동 K-배터리 영향",
+        "time": 0.1187,
+        "top1_score": 0.2458,
+        "top1_source": "05_리스크_외부_환경.md",
+        "top1_preview": "### 1.2 미국 IRA 정책 변동 리스크\n\n**IRA 축소·폐지 움직임**:\n- 트럼프 2기 행정부: IRA 전면 재검토\n- 하원 세입위원회"
+      },
+      {
+        "query": "배터리스왑 EVOGO 서비스 전략",
+        "time": 0.1158,
+        "top1_score": 0.2449,
+        "top1_source": "03_CATL_전략_분석.md",
+        "top1_preview": "## 6. 배터리스왑 전략\n\n### 6.1 EVOGO 배터리스왑 서비스\n\nCATL은 자회사 EVOGO를 통해 배터리스왑 생태계를 구축하고 있다."
+      }
+    ],
+    "disk_mb": 0.28
+  },
+  "chroma": {
+    "name": "Chroma",
+    "index_time": 22.826,
+    "memory_mb": 50.9,
+    "avg_search_time": 123.26,
+    "min_search_time": 117.37,
+    "max_search_time": 135.1,
+    "search_details": [
+      {
+        "query": "LG에너지솔루션 2025년 매출 영업이익",
+        "time": 0.1331,
+        "top1_score": 0.2572,
+        "top1_source": "04_양사_비교_데이터.md",
+        "top1_preview": "## 1. 핵심 경영 지표 비교 (2025년 기준)\n\n### 1.1 재무 실적 비교\n\n| 지표 | LG에너지솔루션 | CATL | 배율(CATL"
+      },
+      {
+        "query": "CATL 나트륨이온 배터리 상용화 시점",
+        "time": 0.1192,
+        "top1_score": 0.258,
+        "top1_source": "03_CATL_전략_분석.md",
+        "top1_preview": "- 글로벌이코노믹(2026-03-12). *CATL 전고체 배터리 국제 특허 공개*. https://www.g-enews.com/article/"
+      },
+      {
+        "query": "글로벌 ESS 시장 규모 성장률 전망",
+        "time": 0.1174,
+        "top1_score": 0.2624,
+        "top1_source": "01_글로벌_배터리_시장_환경.md",
+        "top1_preview": "## 2. ESS(에너지저장장치) 시장의 급부상\n\n### 2.1 ESS 시장 규모와 성장 전망\n\n전기차 시장이 캐즘을 겪는 동안 ESS 시장은 "
+      },
+      {
+        "query": "전기차 캐즘 원인과 HEV 피벗",
+        "time": 0.1351,
+        "top1_score": 0.1859,
+        "top1_source": "01_글로벌_배터리_시장_환경.md",
+        "top1_preview": "### 1.3 캐즘 발생의 주요 원인\n\n**가격 장벽**: 전기차의 평균 판매 가격은 여전히 내연기관 대비 높은 수준이다. 미국 시장에서 전기차"
+      },
+      {
+        "query": "LG에너지솔루션 CATL 시장점유율 비교",
+        "time": 0.13,
+        "top1_score": 0.1445,
+        "top1_source": "04_양사_비교_데이터.md",
+        "top1_preview": "# LG에너지솔루션 vs CATL 비교 데이터"
+      },
+      {
+        "query": "배터리 원자재 리튬 가격 변동",
+        "time": 0.122,
+        "top1_score": 0.2535,
+        "top1_source": "01_글로벌_배터리_시장_환경.md",
+        "top1_preview": "## 4. 배터리 원자재 시장 동향\n\n### 4.1 핵심 원자재 가격 변동\n\n배터리 핵심 원자재 가격은 2022년 급등 이후 하락세를 거쳐 20"
+      },
+      {
+        "query": "CATL 해외 공장 유럽 인도네시아",
+        "time": 0.1198,
+        "top1_score": 0.2529,
+        "top1_source": "04_양사_비교_데이터.md",
+        "top1_preview": "## 5. 글로벌 생산 거점 비교\n\n### 5.1 생산 기지 수\n\n| 지역 | LG에너지솔루션 | CATL |\n|------|----------"
+      },
+      {
+        "query": "전고체 배터리 기술 로드맵 양산",
+        "time": 0.118,
+        "top1_score": 0.2769,
+        "top1_source": "05_리스크_외부_환경.md",
+        "top1_preview": "## 5. 기술 리스크\n\n### 5.1 전고체 배터리 상용화 불확실성\n\n**기술적 과제**:\n- 고체 전해질의 이온 전도도 향상\n- 전극-전해질"
+      },
+      {
+        "query": "IRA 정책 변동 K-배터리 영향",
+        "time": 0.1184,
+        "top1_score": 0.2458,
+        "top1_source": "05_리스크_외부_환경.md",
+        "top1_preview": "### 1.2 미국 IRA 정책 변동 리스크\n\n**IRA 축소·폐지 움직임**:\n- 트럼프 2기 행정부: IRA 전면 재검토\n- 하원 세입위원회"
+      },
+      {
+        "query": "배터리스왑 EVOGO 서비스 전략",
+        "time": 0.1196,
+        "top1_score": 0.2449,
+        "top1_source": "03_CATL_전략_분석.md",
+        "top1_preview": "## 6. 배터리스왑 전략\n\n### 6.1 EVOGO 배터리스왑 서비스\n\nCATL은 자회사 EVOGO를 통해 배터리스왑 생태계를 구축하고 있다."
+      }
+    ],
+    "disk_mb": 1.46
+  }
+}

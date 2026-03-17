@@ -1,0 +1,314 @@
+[
+  {
+    "name": "multilingual-e5-large",
+    "model_id": "intfloat/multilingual-e5-large",
+    "dim": 1024,
+    "model_load_time": 4.99,
+    "index_time": 24.03,
+    "hit_at_1": 70.0,
+    "hit_at_3": 100.0,
+    "hit_at_5": 100.0,
+    "avg_search_time_ms": 113.19,
+    "avg_top1_score": 0.2354,
+    "details": [
+      {
+        "query": "LG에너지솔루션 2025년 매출 영업이익 실적",
+        "expected": "02_LG에너지솔루션_전략_분석.md",
+        "top1_source": "04_양사_비교_데이터.md",
+        "top1_score": 0.2395,
+        "hit_top1": false,
+        "hit_top5": true,
+        "time_ms": 121.9
+      },
+      {
+        "query": "CATL 나트륨이온 배터리 2026 상용화",
+        "expected": "03_CATL_전략_분석.md",
+        "top1_source": "03_CATL_전략_분석.md",
+        "top1_score": 0.2145,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 115.0
+      },
+      {
+        "query": "글로벌 ESS 에너지저장장치 시장 규모 성장",
+        "expected": "01_글로벌_배터리_시장_환경.md",
+        "top1_source": "01_글로벌_배터리_시장_환경.md",
+        "top1_score": 0.2497,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 119.1
+      },
+      {
+        "query": "LG에너지솔루션 CATL 시장점유율 비교 격차",
+        "expected": "04_양사_비교_데이터.md",
+        "top1_source": "04_양사_비교_데이터.md",
+        "top1_score": 0.1427,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 103.4
+      },
+      {
+        "query": "미국 IRA 정책 변동 배터리 관세 리스크",
+        "expected": "05_리스크_외부_환경.md",
+        "top1_source": "05_리스크_외부_환경.md",
+        "top1_score": 0.232,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 116.4
+      },
+      {
+        "query": "CATL ESS 글로벌 점유율 아프리카 신흥시장",
+        "expected": "03_CATL_전략_분석.md",
+        "top1_source": "03_CATL_전략_분석.md",
+        "top1_score": 0.2488,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 116.4
+      },
+      {
+        "query": "LG에너지솔루션 46시리즈 원통형 배터리 로봇",
+        "expected": "02_LG에너지솔루션_전략_분석.md",
+        "top1_source": "04_양사_비교_데이터.md",
+        "top1_score": 0.2826,
+        "hit_top1": false,
+        "hit_top5": true,
+        "time_ms": 101.2
+      },
+      {
+        "query": "전기차 캐즘 HEV 하이브리드 피벗",
+        "expected": "01_글로벌_배터리_시장_환경.md",
+        "top1_source": "01_글로벌_배터리_시장_환경.md",
+        "top1_score": 0.2658,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 118.0
+      },
+      {
+        "query": "CATL 응축물질 배터리 전고체 기술 로드맵",
+        "expected": "03_CATL_전략_분석.md",
+        "top1_source": "03_CATL_전략_분석.md",
+        "top1_score": 0.2188,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 103.2
+      },
+      {
+        "query": "배터리 원자재 리튬 니켈 가격 변동 공급망",
+        "expected": "05_리스크_외부_환경.md",
+        "top1_source": "01_글로벌_배터리_시장_환경.md",
+        "top1_score": 0.2599,
+        "hit_top1": false,
+        "hit_top5": true,
+        "time_ms": 117.3
+      }
+    ]
+  },
+  {
+    "name": "bge-m3",
+    "model_id": "BAAI/bge-m3",
+    "dim": 1024,
+    "model_load_time": 5.19,
+    "index_time": 25.03,
+    "hit_at_1": 80.0,
+    "hit_at_3": 100.0,
+    "hit_at_5": 100.0,
+    "avg_search_time_ms": 107.18,
+    "avg_top1_score": 0.6145,
+    "details": [
+      {
+        "query": "LG에너지솔루션 2025년 매출 영업이익 실적",
+        "expected": "02_LG에너지솔루션_전략_분석.md",
+        "top1_source": "02_LG에너지솔루션_전략_분석.md",
+        "top1_score": 0.6952,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 110.8
+      },
+      {
+        "query": "CATL 나트륨이온 배터리 2026 상용화",
+        "expected": "03_CATL_전략_분석.md",
+        "top1_source": "03_CATL_전략_분석.md",
+        "top1_score": 0.6025,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 107.9
+      },
+      {
+        "query": "글로벌 ESS 에너지저장장치 시장 규모 성장",
+        "expected": "01_글로벌_배터리_시장_환경.md",
+        "top1_source": "01_글로벌_배터리_시장_환경.md",
+        "top1_score": 0.5354,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 113.7
+      },
+      {
+        "query": "LG에너지솔루션 CATL 시장점유율 비교 격차",
+        "expected": "04_양사_비교_데이터.md",
+        "top1_source": "04_양사_비교_데이터.md",
+        "top1_score": 0.2964,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 97.1
+      },
+      {
+        "query": "미국 IRA 정책 변동 배터리 관세 리스크",
+        "expected": "05_리스크_외부_환경.md",
+        "top1_source": "05_리스크_외부_환경.md",
+        "top1_score": 0.5869,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 109.4
+      },
+      {
+        "query": "CATL ESS 글로벌 점유율 아프리카 신흥시장",
+        "expected": "03_CATL_전략_분석.md",
+        "top1_source": "03_CATL_전략_분석.md",
+        "top1_score": 0.5843,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 108.7
+      },
+      {
+        "query": "LG에너지솔루션 46시리즈 원통형 배터리 로봇",
+        "expected": "02_LG에너지솔루션_전략_분석.md",
+        "top1_source": "04_양사_비교_데이터.md",
+        "top1_score": 0.834,
+        "hit_top1": false,
+        "hit_top5": true,
+        "time_ms": 94.0
+      },
+      {
+        "query": "전기차 캐즘 HEV 하이브리드 피벗",
+        "expected": "01_글로벌_배터리_시장_환경.md",
+        "top1_source": "01_글로벌_배터리_시장_환경.md",
+        "top1_score": 0.765,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 108.4
+      },
+      {
+        "query": "CATL 응축물질 배터리 전고체 기술 로드맵",
+        "expected": "03_CATL_전략_분석.md",
+        "top1_source": "03_CATL_전략_분석.md",
+        "top1_score": 0.539,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 94.3
+      },
+      {
+        "query": "배터리 원자재 리튬 니켈 가격 변동 공급망",
+        "expected": "05_리스크_외부_환경.md",
+        "top1_source": "01_글로벌_배터리_시장_환경.md",
+        "top1_score": 0.7069,
+        "hit_top1": false,
+        "hit_top5": true,
+        "time_ms": 127.5
+      }
+    ]
+  },
+  {
+    "name": "ko-sroberta",
+    "model_id": "jhgan/ko-sroberta-multitask",
+    "dim": 768,
+    "model_load_time": 53.54,
+    "index_time": 2.04,
+    "hit_at_1": 80.0,
+    "hit_at_3": 100.0,
+    "hit_at_5": 100.0,
+    "avg_search_time_ms": 41.37,
+    "avg_top1_score": 0.553,
+    "details": [
+      {
+        "query": "LG에너지솔루션 2025년 매출 영업이익 실적",
+        "expected": "02_LG에너지솔루션_전략_분석.md",
+        "top1_source": "02_LG에너지솔루션_전략_분석.md",
+        "top1_score": 0.6697,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 42.2
+      },
+      {
+        "query": "CATL 나트륨이온 배터리 2026 상용화",
+        "expected": "03_CATL_전략_분석.md",
+        "top1_source": "05_리스크_외부_환경.md",
+        "top1_score": 0.6511,
+        "hit_top1": false,
+        "hit_top5": true,
+        "time_ms": 43.0
+      },
+      {
+        "query": "글로벌 ESS 에너지저장장치 시장 규모 성장",
+        "expected": "01_글로벌_배터리_시장_환경.md",
+        "top1_source": "01_글로벌_배터리_시장_환경.md",
+        "top1_score": 0.3547,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 40.7
+      },
+      {
+        "query": "LG에너지솔루션 CATL 시장점유율 비교 격차",
+        "expected": "04_양사_비교_데이터.md",
+        "top1_source": "04_양사_비교_데이터.md",
+        "top1_score": 0.3355,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 39.3
+      },
+      {
+        "query": "미국 IRA 정책 변동 배터리 관세 리스크",
+        "expected": "05_리스크_외부_환경.md",
+        "top1_source": "05_리스크_외부_환경.md",
+        "top1_score": 0.5764,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 44.4
+      },
+      {
+        "query": "CATL ESS 글로벌 점유율 아프리카 신흥시장",
+        "expected": "03_CATL_전략_분석.md",
+        "top1_source": "03_CATL_전략_분석.md",
+        "top1_score": 0.6242,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 40.4
+      },
+      {
+        "query": "LG에너지솔루션 46시리즈 원통형 배터리 로봇",
+        "expected": "02_LG에너지솔루션_전략_분석.md",
+        "top1_source": "02_LG에너지솔루션_전략_분석.md",
+        "top1_score": 0.6672,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 39.5
+      },
+      {
+        "query": "전기차 캐즘 HEV 하이브리드 피벗",
+        "expected": "01_글로벌_배터리_시장_환경.md",
+        "top1_source": "05_리스크_외부_환경.md",
+        "top1_score": 0.7989,
+        "hit_top1": false,
+        "hit_top5": true,
+        "time_ms": 41.7
+      },
+      {
+        "query": "CATL 응축물질 배터리 전고체 기술 로드맵",
+        "expected": "03_CATL_전략_분석.md",
+        "top1_source": "03_CATL_전략_분석.md",
+        "top1_score": 0.3782,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 38.5
+      },
+      {
+        "query": "배터리 원자재 리튬 니켈 가격 변동 공급망",
+        "expected": "05_리스크_외부_환경.md",
+        "top1_source": "05_리스크_외부_환경.md",
+        "top1_score": 0.4746,
+        "hit_top1": true,
+        "hit_top5": true,
+        "time_ms": 43.9
+      }
+    ]
+  }
+]

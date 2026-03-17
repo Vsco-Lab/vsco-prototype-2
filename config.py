@@ -13,7 +13,7 @@ LLM_MODEL = "gpt-4o-mini"
 LLM_TEMPERATURE = 0.2
 
 # Embedding
-EMBEDDING_MODEL = "intfloat/multilingual-e5-large"
+EMBEDDING_MODEL = "BAAI/bge-m3"
 EMBEDDING_DIMENSION = 1024
 
 # RAG

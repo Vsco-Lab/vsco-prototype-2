@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>배터리 시장 전략 분석 보고서</title>
+<style>
+  @page { size: A4; margin: 25mm 20mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.85;
+    background: #fff;
+  }
+
+  /* 페이지 구분 */
+  .page-break { page-break-before: always; border-top: 1px solid #e9ecef; margin: 50px 0; padding-top: 30px; }
+
+  /* 헤더 */
+  .report-header {
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #1a1a2e;
+    margin-bottom: 40px;
+  }
+  .report-header h1 {
+    font-size: 28px;
+    color: #1a1a2e;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .report-header .sub {
+    font-size: 16px;
+    color: #6c757d;
+    font-weight: 400;
+  }
+  .report-header .date {
+    font-size: 12px;
+    color: #adb5bd;
+    margin-top: 12px;
+  }
+
+  /* 챕터 제목 */
+  h2 {
+    font-size: 22px;
+    color: #1a1a2e;
+    font-weight: 700;
+    margin: 36px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1a1a2e;
+  }
+  h3 {
+    font-size: 17px;
+    color: #0077b6;
+    font-weight: 600;
+    margin: 28px 0 12px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  h4 {
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+    margin: 20px 0 8px;
+  }
+
+  p { margin-bottom: 12px; text-align: justify; }
+
+  /* SUMMARY 박스 */
+  .summary-box {
+    background: #f8f9fa;
+    border-left: 5px solid #1a1a2e;
+    padding: 24px 28px;
+    margin: 20px 0 30px;
+    border-radius: 0 8px 8px 0;
+  }
+  .summary-box p { margin-bottom: 10px; }
+  .summary-box p:last-child { margin-bottom: 0; }
+
+  /* 표 */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px;
+    font-size: 13px;
+  }
+  th {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 10px 14px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  td {
+    border: 1px solid #dee2e6;
+    padding: 9px 14px;
+    vertical-align: top;
+  }
+  tr:nth-child(even) { background: #f9f9fb; }
+
+  /* SWOT 표 */
+  .swot-table { border-collapse: collapse; width: 100%; margin: 16px 0 24px; }
+  .swot-table th { padding: 10px; font-size: 13px; }
+  .swot-table td { padding: 12px 14px; font-size: 13px; line-height: 1.7; }
+  .swot-s { background: #e8f5e9; }
+  .swot-w { background: #fce4ec; }
+  .swot-o { background: #e3f2fd; }
+  .swot-t { background: #fff3e0; }
+  .swot-label { font-weight: 700; font-size: 13px; text-align: center; width: 50px; }
+
+  /* 불릿 */
+  ul { padding-left: 20px; margin: 8px 0 16px; }
+  li { margin-bottom: 6px; }
+
+  /* 강조 */
+  strong { color: #1a1a2e; }
+  .highlight { color: #0077b6; font-weight: 600; }
+  .num { color: #e85d04; font-weight: 700; }
+
+  /* Reference */
+  .ref-section { font-size: 12px; line-height: 1.7; color: #495057; }
+  .ref-section h4 { color: #6c757d; font-size: 13px; margin: 16px 0 6px; }
+  .ref-section p { margin-bottom: 4px; text-align: left; }
+  .ref-section em { font-style: italic; }
+</style>
+</head>
+<body>
+
+<!-- 보고서 헤더 -->
+<div class="report-header">
+  <h1>배터리 시장 전략 분석 보고서</h1>
+  <div class="sub">LG에너지솔루션 vs CATL — 포트폴리오 다각화 전략 비교</div>
+  <div class="date">2026. 03. 17</div>
+</div>
+
+<!-- ============================================ -->
+<!-- 1. SUMMARY -->
+<!-- ============================================ -->
+<h2>1. SUMMARY</h2>
+
+<div class="summary-box">
+  <p>
+    전기차 시장이 캐즘(Chasm)에 진입하면서 글로벌 배터리 산업은 EV 단일 의존 구조에서 벗어나 사업 포트폴리오 재편을 가속하고 있다. 본 보고서는 글로벌 TOP-Tier 배터리 기업인 <strong>LG에너지솔루션</strong>과 <strong>CATL</strong>의 다각화 전략을 비교 분석하였다.
+  </p>
+  <p>
+    LG에너지솔루션은 <strong>'밸류 시프트(Value Shift)'</strong> 전략 하에 ESS·원통형 배터리·로봇 시장으로의 전환을 추진하며, 북미 IRA 수혜 기반의 지역 우위를 활용하고 있다. 반면 CATL은 <strong>'All-Domain Growth'</strong> 전략으로 LFP·나트륨이온·배터리스왑·ESS를 아우르는 전 영역 확장과 유럽·동남아 현지화를 병행하며 글로벌 1위를 공고히 하고 있다.
+  </p>
+  <p>
+    SWOT 분석 결과, LG에너지솔루션은 <strong>하이니켈 기술력과 북미 시장 접근성</strong>이 핵심 강점이나, 원가 경쟁력과 규모에서 열위이다. CATL은 <strong>압도적 규모와 원가 경쟁력</strong>을 갖추었으나, 미국 시장 차단과 지정학적 리스크가 주요 위협 요인이다. 한국 배터리 산업이 캐즘을 극복하기 위해서는 ESS 중심의 사업 전환 가속, 차세대 기술 조기 상용화, 그리고 원가 혁신이 시급하다.
+  </p>
+</div>
+
+<!-- ============================================ -->
+<!-- 2. 시장 배경 -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+<h2>2. 시장 배경</h2>
+
+<h3>2.1 글로벌 전기차 캐즘 현황</h3>
+<p>
+  2024~2026년 글로벌 전기차 시장은 기술 수용 주기 상 <strong>캐즘(Chasm)</strong> 구간에 진입해 있다. 전기차 보급률이 주요 시장에서 15~20%에 도달했으나, 주류 소비자의 본격 전환은 이루어지지 않고 있다.
+</p>
+<p>
+  글로벌 전기차 판매량은 2025년 약 <span class="num">2,100만 대</span>를 기록했으나, 성장률은 둔화세를 보이고 있다. 특히 미국과 유럽에서의 정체가 두드러지며, 완성차 업체들은 BEV 전략에서 <strong>HEV(하이브리드) 피벗</strong>으로 선회하고 있다.
+</p>
+
+<table>
+  <tr><th>연도</th><th>글로벌 EV 판매량</th><th>전년 대비 성장률</th></tr>
+  <tr><td>2023년</td><td>약 1,400만 대</td><td>—</td></tr>
+  <tr><td>2024년</td><td>약 1,700만 대</td><td>+21%</td></tr>
+  <tr><td>2025년</td><td>약 2,100만 대</td><td>+24%</td></tr>
+  <tr><td>2026년(E)</td><td>약 2,429만 대</td><td>+15%</td></tr>
+</table>
+
+<h3>2.2 ESS 시장의 급부상</h3>
+<p>
+  전기차 시장이 캐즘을 겪는 동안 ESS 시장은 <span class="num">50~100%</span>의 고성장을 기록하며 배터리 산업의 새로운 핵심 성장 엔진으로 부상하고 있다.
+  AI 데이터센터의 전력 수요 급증, 재생에너지 간헐성 보완 수요, 신흥 시장 인프라 구축이 ESS 수요를 견인하고 있다.
+</p>
+
+<table>
+  <tr><th>연도</th><th>ESS 설치 용량(GWh)</th><th>전년 대비 성장률</th></tr>
+  <tr><td>2024년</td><td>235</td><td>—</td></tr>
+  <tr><td>2026년(E)</td><td>359</td><td>~24%</td></tr>
+  <tr><td>2030년(E)</td><td>750</td><td>연평균 20%+</td></tr>
+</table>
+
+<h3>2.3 배터리 산업 패러다임 전환</h3>
+<p>
+  배터리 산업은 EV 단일 시장 의존에서 벗어나 <strong>에너지 플랫폼 기업</strong>으로의 체질 전환기에 진입했다. ESS, AI 데이터센터, 로봇, UAM, 선박, 우주항공 등으로 적용 영역이 확장되고 있으며, LFP·나트륨이온·전고체 등 배터리 화학 체계도 다변화되고 있다.
+</p>
+
+<h3>2.4 원자재 및 정책 환경 변화</h3>
+<p>
+  리튬 가격은 2022년 톤당 약 70,000달러에서 2024년 15,000달러 미만으로 급락한 뒤 2025년 일부 반등하고 있다. 트럼프 2기 행정부의 IRA 축소 움직임(전기차 세액공제 2026년 말 조기 종료 법안)은 K-배터리 기업의 북미 수익성에 직접적 위협이 되고 있다.
+</p>
+
+<!-- ============================================ -->
+<!-- 3. LG에너지솔루션 전략 분석 -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+<h2>3. LG에너지솔루션 전략 분석</h2>
+
+<h3>3.1 사업 실적 및 현황</h3>
+<table>
+  <tr><th>항목</th><th>2024년</th><th>2025년</th><th>전년 대비</th></tr>
+  <tr><td>매출</td><td>25조 5,986억원</td><td>23조 6,718억원</td><td>-7.6%</td></tr>
+  <tr><td>영업이익</td><td>5,753억원</td><td>1조 3,461억원</td><td>+133.9%</td></tr>
+  <tr><td>영업이익률</td><td>2.2%</td><td>5.7%</td><td>+3.5%p</td></tr>
+</table>
+<p>
+  매출은 EV 파우치형 수요 부진으로 감소했으나, 원가 절감과 ESS 고마진 매출 확대로 영업이익은 <span class="num">133.9%</span> 증가하며 수익성이 크게 개선되었다.
+</p>
+
+<h3>3.2 밸류 시프트(Value Shift) 전략</h3>
+<p>
+  LG에너지솔루션은 2026년 핵심 키워드로 <strong>'밸류 시프트(Value Shift)'</strong>를 제시했다. EV 단일 성장 스토리에서 벗어나 ESS·AI 인프라·로봇 등으로 배터리 수요의 중심축이 이동하고 있다는 진단 하에, 사업 포트폴리오의 근본적 재편을 추진하고 있다.
+</p>
+
+<h3>3.3 ESS·원통형·신시장 다각화</h3>
+<ul>
+  <li><strong>ESS</strong>: 2026년 신규 수주 목표 90GWh 이상. 미국에서 ESS 출하량이 EV를 추월할 전망</li>
+  <li><strong>원통형(46시리즈)</strong>: 오창 공장 양산 시작, 애리조나 공장으로 확대 예정</li>
+  <li><strong>로봇</strong>: 글로벌 선도 6개 업체에 원통형 배터리 공급 중</li>
+  <li><strong>UAM/드론/선박</strong>: 고에너지밀도 배터리 기술 기반 진출</li>
+</ul>
+
+<h3>3.4 기술 로드맵</h3>
+<ul>
+  <li><strong>화학 다변화</strong>: 하이니켈 삼원계 + LFP + 미드니켈 + LMR 동시 확대</li>
+  <li><strong>전고체</strong>: 황(Sulfur) 양극 기술 구현 성공 (2026.03 발표)</li>
+  <li><strong>건식 전극</strong>: 에너지 소비 40% 절감 공정 개발 중</li>
+  <li><strong>소듐이온</strong>: R&D 병행 추진</li>
+</ul>
+
+<h3>3.5 핵심 경쟁력</h3>
+<p>
+  <strong>하이니켈 삼원계 기술 리더십</strong>, <strong>북미 현지 생산 기반(IRA 수혜)</strong>, 그리고 글로벌 완성차 OEM과의 폭넓은 파트너십이 LG에너지솔루션의 핵심 경쟁력이다.
+</p>
+
+<!-- ============================================ -->
+<!-- 4. CATL 전략 분석 -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+<h2>4. CATL 전략 분석</h2>
+
+<h3>4.1 사업 실적 및 현황</h3>
+<table>
+  <tr><th>항목</th><th>2024년</th><th>2025년</th><th>전년 대비</th></tr>
+  <tr><td>매출</td><td>362.0B CNY</td><td>423.7B CNY (≈61.4B USD)</td><td>+17.04%</td></tr>
+  <tr><td>순이익</td><td>50.7B CNY</td><td>72.2B CNY (≈10.5B USD)</td><td>+42.28%</td></tr>
+  <tr><td>배터리 출하량</td><td>475 GWh</td><td>661 GWh</td><td>+39.16%</td></tr>
+  <tr><td>글로벌 EV 점유율</td><td>38.0%</td><td>39.2% (1위)</td><td>+1.2%p</td></tr>
+</table>
+<p>
+  CATL은 매출과 이익이 동시에 대폭 성장하며, 순이익 <span class="num">72.2B CNY</span>은 중국 자동차 기업 13곳의 합계를 초과하는 수준이다.
+</p>
+
+<h3>4.2 All-Domain Growth 전략</h3>
+<p>
+  CATL은 <strong>'All-Domain Growth(전 영역 성장)'</strong> 전략을 천명하며, 전기차·에너지저장·항공·선박·AI 인프라 등 산업 전반으로 배터리 적용 영역을 확장하고 있다.
+</p>
+
+<h3>4.3 나트륨이온·ESS·배터리스왑 다각화</h3>
+<ul>
+  <li><strong>나트륨이온</strong>: 2026년 대규모 상업 배치 시작, 500km 주행거리 달성, 중국 국가 표준 최초 인증</li>
+  <li><strong>ESS</strong>: 글로벌 점유율 30.4%(1위, 5년 연속), 출하량 전년 대비 160%+ 성장</li>
+  <li><strong>배터리스왑</strong>: EVOGO 서비스, 2025년 1,000개 스테이션 구축 목표 (시노펙·NIO·디디 제휴)</li>
+</ul>
+
+<h3>4.4 기술 로드맵</h3>
+<ul>
+  <li><strong>Shenxing 2세대</strong>: 10분 충전 400km 주행, -30°C 정상 작동</li>
+  <li><strong>응축물질 배터리</strong>: 500Wh/kg, 항공기(EHang) 적용 중</li>
+  <li><strong>전고체</strong>: 2027년 소규모 양산 → 2030년 이전 대규모 상용화 목표</li>
+  <li><strong>Freevoy 듀얼파워</strong>: HEV 피벗 트렌드 대응 전략 제품</li>
+</ul>
+
+<h3>4.5 핵심 경쟁력</h3>
+<p>
+  <strong>압도적 규모(772GWh 캐파)</strong>, <strong>LFP 원가 경쟁력</strong>, 나트륨이온 선점, 그리고 유럽·동남아 글로벌 현지화 전략이 CATL의 핵심 경쟁력이다.
+</p>
+
+<!-- ============================================ -->
+<!-- 5. 핵심 전략 비교 및 SWOT 분석 -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+<h2>5. 핵심 전략 비교 및 SWOT 분석</h2>
+
+<h3>5.1 전략 비교</h3>
+<table>
+  <tr><th>비교 축</th><th>LG에너지솔루션</th><th>CATL</th></tr>
+  <tr>
+    <td><strong>전략 키워드</strong></td>
+    <td>밸류 시프트 (Value Shift)</td>
+    <td>전 영역 성장 (All-Domain Growth)</td>
+  </tr>
+  <tr>
+    <td><strong>ESS 전략</strong></td>
+    <td>북미 중심, 2026년 수주 90GWh 목표</td>
+    <td>글로벌 1위(30.4%), 신흥시장 적극 공략</td>
+  </tr>
+  <tr>
+    <td><strong>기술 방향</strong></td>
+    <td>하이니켈 + LFP 확대 + 전고체</td>
+    <td>LFP + 나트륨이온 + 응축물질 + 전고체</td>
+  </tr>
+  <tr>
+    <td><strong>지역 전략</strong></td>
+    <td>북미(IRA 수혜) 중심</td>
+    <td>유럽 3국 + 인도네시아 + 신흥시장</td>
+  </tr>
+  <tr>
+    <td><strong>원가 전략</strong></td>
+    <td>원가 혁신 추진 중 (격차 존재)</td>
+    <td>LFP + 나트륨이온으로 초저가 실현</td>
+  </tr>
+  <tr>
+    <td><strong>R&amp;D 투자</strong></td>
+    <td>~1.3조원 (매출 대비 5.2%)</td>
+    <td>~4.8조원 (매출 대비 5.2%)</td>
+  </tr>
+</table>
+
+<h3>5.2 LG에너지솔루션 SWOT</h3>
+<table class="swot-table">
+  <tr>
+    <th colspan="2" style="background:#0077b6;">LG에너지솔루션 SWOT</th>
+  </tr>
+  <tr>
+    <td class="swot-label swot-s">S</td>
+    <td class="swot-s">
+      • 하이니켈 삼원계 기술 리더십<br>
+      • 북미 현지 생산 기반 (IRA AMPC 수혜)<br>
+      • GM, 현대차, 도요타 등 글로벌 OEM 파트너십<br>
+      • 46시리즈 원통형 배터리 양산 개시
+    </td>
+  </tr>
+  <tr>
+    <td class="swot-label swot-w">W</td>
+    <td class="swot-w">
+      • CATL 대비 규모(캐파·매출) 열위 (약 1/3~1/4)<br>
+      • LFP 원가 경쟁력 부족<br>
+      • 나트륨이온 기술 후발<br>
+      • 북미 합작 파트너 이탈 → 가동률·고정비 부담
+    </td>
+  </tr>
+  <tr>
+    <td class="swot-label swot-o">O</td>
+    <td class="swot-o">
+      • ESS 시장 고성장 (2030년 750GWh 전망)<br>
+      • AI 데이터센터용 ESS 수요 폭발<br>
+      • 로봇·UAM 등 신규 시장 성장<br>
+      • 중국 기업 미국 시장 차단에 따른 반사 수혜
+    </td>
+  </tr>
+  <tr>
+    <td class="swot-label swot-t">T</td>
+    <td class="swot-t">
+      • IRA 축소·폐지 시 수익성 5~6%p 하락<br>
+      • 중국 기업의 글로벌 가격 공세<br>
+      • LFP 비중 확대에 따른 삼원계 수요 둔화<br>
+      • 전기차 캐즘 장기화 가능성
+    </td>
+  </tr>
+</table>
+
+<h3>5.3 CATL SWOT</h3>
+<table class="swot-table">
+  <tr>
+    <th colspan="2" style="background:#e85d04;">CATL SWOT</th>
+  </tr>
+  <tr>
+    <td class="swot-label swot-s">S</td>
+    <td class="swot-s">
+      • 글로벌 1위(EV 39.2%, ESS 30.4%)<br>
+      • 압도적 생산 규모 (772GWh + 321GWh 건설 중)<br>
+      • LFP·나트륨이온 원가 경쟁력<br>
+      • R&D 투자 ~4.8조원 (업계 최대)
+    </td>
+  </tr>
+  <tr>
+    <td class="swot-label swot-w">W</td>
+    <td class="swot-w">
+      • 미국 시장 직접 진출 차단 (국방부 블랙리스트)<br>
+      • 해외 매출 비중 30.6%로 내수 의존도 높음<br>
+      • 공급 과잉 리스크 (1,100GWh 목표)<br>
+      • 중국 정부 정책 의존도
+    </td>
+  </tr>
+  <tr>
+    <td class="swot-label swot-o">O</td>
+    <td class="swot-o">
+      • 나트륨이온 2026년 상용화 → '반값 전기차' 주도<br>
+      • 유럽·동남아·아프리카 시장 확장<br>
+      • 배터리스왑 생태계 구축 → BaaS 모델 선점<br>
+      • 응축물질 배터리 항공 시장 개척
+    </td>
+  </tr>
+  <tr>
+    <td class="swot-label swot-t">T</td>
+    <td class="swot-t">
+      • 미중 기술 패권 경쟁 격화<br>
+      • EU 중국산 EV 관세 (최대 38.1%)<br>
+      • 중국 기술 수출 통제 → 해외 라이선싱 제약<br>
+      • EU 탄소발자국 규제 (중국 전력망 석탄 의존)
+    </td>
+  </tr>
+</table>
+
+<h3>5.4 양사 SWOT 비교 종합</h3>
+<p>
+  LG에너지솔루션은 <strong>기술 차별화(하이니켈)와 지역 접근성(북미)</strong>에서, CATL은 <strong>규모·원가·제품 다양성</strong>에서 우위를 보인다. 양사 모두 ESS를 차세대 성장 동력으로 삼고 있으나, CATL이 나트륨이온·배터리스왑 등 더 넓은 스펙트럼으로 사업을 확장하고 있다. 지정학적 리스크 측면에서는 LG에너지솔루션이 상대적으로 유리하나, IRA 정책 변동이 최대 변수로 남아 있다.
+</p>
+
+<!-- ============================================ -->
+<!-- 6. 종합 시사점 -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+<h2>6. 종합 시사점</h2>
+
+<h3>6.1 전략적 차이점 요약</h3>
+<p>
+  LG에너지솔루션은 <strong>'선택과 집중'</strong> 전략으로 하이니켈 기술력과 북미 거점을 지렛대 삼아 ESS·로봇 등 고부가가치 시장에 집중하는 반면, CATL은 <strong>'전방위 확장'</strong> 전략으로 다양한 화학 체계·지역·애플리케이션을 동시에 공략하고 있다. 이는 양사의 근본적인 규모 차이(매출 약 3.4배, 캐파 약 4배)에서 비롯된 전략적 선택이다.
+</p>
+
+<h3>6.2 한국 배터리 산업 시사점</h3>
+<ul>
+  <li><strong>ESS 전환 가속</strong>: EV 캐즘 속에서 ESS가 수익성 방어의 핵심. 북미 AI 데이터센터 수요 선점이 관건</li>
+  <li><strong>원가 혁신 시급</strong>: LFP 원가 격차 해소, 나트륨이온 등 저가 배터리 R&D 강화 필요</li>
+  <li><strong>차세대 기술 조기 상용화</strong>: 전고체·건식공정 등에서 선점 기회 확보</li>
+  <li><strong>공급망 자립도 제고</strong>: 중국 원자재 가공 의존도 축소, 리사이클링 역량 강화</li>
+</ul>
+
+<h3>6.3 향후 전망</h3>
+<p>
+  2026~2030년은 배터리 산업의 <strong>제2성장기</strong>로, ESS·로봇·UAM 등 비(非)EV 시장이 핵심 동력이 될 전망이다. 나트륨이온의 상용화(CATL, 2026년)와 전고체 배터리의 소규모 양산(2027~2028년)이 시장 구도를 재편할 변수이며, 미중 기술 패권 경쟁의 향방이 글로벌 공급망과 시장 접근성을 좌우할 것이다.
+</p>
+
+<!-- ============================================ -->
+<!-- 7. REFERENCE -->
+<!-- ============================================ -->
+<div class="page-break"></div>
+<h2>7. REFERENCE</h2>
+
+<div class="ref-section">
+
+<h4>기관 보고서</h4>
+<p>SNE Research(2025). <em>글로벌 배터리 시장 점유율 데이터</em>.</p>
+<p>삼일PwC경영연구원(2024). <em>전기차 '캐즘', K-배터리 위기와 대응전략</em>. https://www.pwc.com/kr/ko/insights/industry-focus/samilpwc_electric-car-chasm.pdf</p>
+
+<h4>웹페이지</h4>
+<p>CATL(2026-03-10). <em>Zero-Carbon Technology Powers "All-Domain Growth": CATL Releases 2025 Annual Report</em>. CATL, https://www.catl.com/en/news/6773.html</p>
+<p>LG에너지솔루션(2026-01). <em>LG에너지솔루션 2025년 연간 실적발표</em>. 배터리인사이드, https://inside.lgensol.com/2026/01/</p>
+<p>CnEVPost(2026-03-09). <em>CATL posts 42% profit jump in 2025</em>. CnEVPost, https://cnevpost.com/2026/03/09/catl-profit-jump-2025/</p>
+<p>굿모닝경제(2026). <em>캐즘 넘는 K배터리, 2026 대반격 키워드</em>. 굿모닝경제, https://www.goodkyung.com/news/articleView.html?idxno=282140</p>
+<p>투데이이코노믹(2026). <em>LG에너지솔루션 ESS 중심 밸류 시프트 본격화</em>. 투데이이코노믹, https://www.todayeconomic.com/news/article.html?no=29486</p>
+<p>서울경제(2026-03-16). <em>합작 깨진 북미 배터리 공장 독박 운영</em>. 서울경제, https://www.sedaily.com/article/20020043</p>
+<p>아시아경제(2026-01-09). <em>中 CATL, 중국밖에서도 점유율 30% 육박</em>. 아시아경제, https://cm.asiae.co.kr/ranking-view/20260109/</p>
+<p>CarNewsChina(2025-12-28). <em>CATL confirms 2026 large-scale sodium-ion battery deployment</em>. CarNewsChina, https://carnewschina.com/2025/12/28/</p>
+<p>글로벌이코노믹(2026-01-13). <em>EV가 주춤한 사이 뜬 ESS…배터리 산업의 새 성장 엔진</em>. 글로벌이코노믹, https://www.g-enews.com/article/Industry/2026/01/</p>
+
+</div>
+
+</body>
+</html>

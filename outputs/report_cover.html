@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>배터리 시장 전략 분석 보고서</title>
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+  }
+  .cover {
+    width: 100%;
+    height: 297mm;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  /* 상단 네이비 바 */
+  .top-bar {
+    width: 100%;
+    height: 8px;
+    background: #1a1a2e;
+  }
+
+  /* 메인 콘텐츠 */
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+  }
+
+  /* 카테고리 태그 */
+  .category {
+    display: inline-block;
+    background: #0077b6;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 3px;
+    margin-bottom: 28px;
+  }
+
+  /* 메인 타이틀 */
+  .title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #1a1a2e;
+    line-height: 1.3;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+  }
+
+  /* 서브 타이틀 */
+  .subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: #6c757d;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+
+  /* 구분선 */
+  .divider {
+    width: 60px;
+    height: 4px;
+    background: #e85d04;
+    margin-bottom: 36px;
+  }
+
+  /* 키워드 박스들 */
+  .keywords {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .keyword {
+    background: #f0f4ff;
+    color: #1a1a2e;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 7px 14px;
+    border-radius: 20px;
+    border: 1px solid #d0d9f0;
+  }
+
+  /* 하단 메타 정보 */
+  .meta-section {
+    padding: 0 60px 50px;
+  }
+  .meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 24px;
+    border-top: 1px solid #e9ecef;
+  }
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .meta-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: #adb5bd;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .meta-value {
+    font-size: 14px;
+    font-weight: 500;
+    color: #495057;
+  }
+
+  /* 하단 네이비 바 */
+  .bottom-bar {
+    width: 100%;
+    height: 40px;
+    background: #1a1a2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bottom-bar span {
+    color: #6c757d;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  /* 오른쪽 사이드 악센트 */
+  .side-accent {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 6px;
+    height: 200px;
+    background: linear-gradient(to bottom, #0077b6, #e85d04);
+    border-radius: 3px 0 0 3px;
+  }
+</style>
+</head>
+<body>
+  <div class="cover">
+    <div class="top-bar"></div>
+    <div class="side-accent"></div>
+
+    <div class="main-content">
+      <div class="category">Multi-Agent Strategy Report</div>
+      <h1 class="title">배터리 시장<br>전략 분석 보고서</h1>
+      <p class="subtitle">
+        LG에너지솔루션 vs CATL<br>
+        포트폴리오 다각화 전략 비교 분석
+      </p>
+      <div class="divider"></div>
+      <div class="keywords">
+        <span class="keyword">전기차 캐즘</span>
+        <span class="keyword">ESS 시장</span>
+        <span class="keyword">SWOT 분석</span>
+        <span class="keyword">나트륨이온 배터리</span>
+        <span class="keyword">포트폴리오 다각화</span>
+      </div>
+    </div>
+
+    <div class="meta-section">
+      <div class="meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">작성일</span>
+          <span class="meta-value">2026. 03. 17</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">프로젝트</span>
+          <span class="meta-value">VSCo Prototype v2</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">분석 방법</span>
+          <span class="meta-value">Multi-Agent (Supervisor Pattern)</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">기술 스택</span>
+          <span class="meta-value">LangGraph · FAISS · GPT-4o-mini</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-bar">
+      <span>BATTERY MARKET STRATEGY ANALYSIS</span>
+    </div>
+  </div>
+</body>
+</html>

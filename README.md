@@ -35,15 +35,8 @@
 
 이에 따라 RAG 파이프라인도 다음과 같이 변경되었다.
 
-```
-[변경 전]
-질의 → RAG 검색 → 관련성 판단 → 충분? → 답변
-                              → 부족? → 웹 검색 → 통합 → 답변
+<img width="2888" height="2644" alt="RAG 파이프 라인 변경" src="https://github.com/user-attachments/assets/5fbbd234-b47e-49a2-b650-1f1956d7c17a" />
 
-[변경 후]
-질의 ─┬→ RAG 검색 (기초 지식) ──────┐
-      └→ 웹 검색 (항상, 편향 방지) ──┤→ 통합 → LLM (웹 최신 우선) → 답변
-```
 
 ## Tech Stack
 
@@ -134,7 +127,8 @@ Tavily와 Serper.dev에 대한 벤치마크를 실시하여 웹 검색 도구를
 
 ## Architecture
 
-![시스템 아키텍처](docs/architecture.png)
+<img width="2960" height="3104" alt="시스템 아키텍처" src="https://github.com/user-attachments/assets/0b3cd0cc-8bde-47d2-89c6-b75570eabe98" />
+
 
 ## Directory Structure
 
